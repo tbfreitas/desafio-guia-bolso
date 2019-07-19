@@ -3,7 +3,7 @@ seu próprio read.me, aqui renomeado como README_bck.
 
 ### OBSERVAÇÕES 
 
-## Repositório do desafio da empresa guia-bolso, passado utilizando React JS para desenvolvimento de um SPA,
+ Repositório do desafio da empresa guia-bolso, passado utilizando React JS para desenvolvimento de um SPA,
 como intuito de avaliação de código, sintaxe, boas práticas, etc...
 
 ## COMO RODAR O PROJETO
