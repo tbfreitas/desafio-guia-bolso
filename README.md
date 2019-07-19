@@ -1,9 +1,9 @@
 Como o app foi desenvolvido pela npm package 'create-react-app', o próprio já possui 
 seu próprio read.me, aqui renomeado como README_bck.
 
-## OBSERVAÇÕES 
+### OBSERVAÇÕES 
 
-# Repositório do desafio da empresa guia-bolso, passado utilizando React JS para desenvolvimento de um SPA,
+## Repositório do desafio da empresa guia-bolso, passado utilizando React JS para desenvolvimento de um SPA,
 como intuito de avaliação de código, sintaxe, boas práticas, etc...
 
 ## COMO RODAR O PROJETO
