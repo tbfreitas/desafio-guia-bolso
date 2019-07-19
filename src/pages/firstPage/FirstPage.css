@@ -1,0 +1,82 @@
+.App{
+  padding: 20px;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Header-page{
+  background-color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.Line-divider{
+  height: 2px;
+  background-color: #E83D6B;
+}
+
+.Logo{
+  /* position: absolute; */
+  right: 20px;
+}
+
+.Title-page{
+  color: #26BCE6;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.Line-list{
+  color : black;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.Line-list:hover{
+  cursor: pointer;
+  background: linear-gradient(#20A6FF, #20A6DD);
+}
+
+.odd{
+  background: linear-gradient(#ddd, #ccc);
+  background-image: linear-gradient(rgb(221, 221, 221), rgb(204, 204, 204));
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+}
+
+.even{
+  background: linear-gradient(#fff, #eee);
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(238, 238, 238));
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+}
+
+
+
