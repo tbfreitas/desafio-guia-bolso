@@ -1,31 +1,58 @@
-import React, { useState } from 'react';
-import logo from './logo.svg';
+import React from 'react';
+import Lottie from 'react-lottie';
+
 import './App.css';
+import Logo from './assets/logo.png';
+
+import useFetch from './hooks/fetch';
+import Animation from './lottie/tick';
 
 function App() {
-  const [count, setCount] = useState(0);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <button onClick={() => setCount(count + 1)}>
-          <span style={{ color: 'red' }}> Aumentar o valor </span>
-        </button>
-        <span style={{ color: 'red' }}>{count}</span>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {RenderHeader()}
+      {RenderData()}
     </div>
   );
 }
+
+const RenderHeader = () => (
+  <div className="Header-page">
+    <span className="Title-page">Desafio Guia Bolso </span>
+    <img className="Logo" src={Logo} width="320" height="70" alt="logo" />
+    <div className="Line-divider" />
+  </div>
+);
+
+const RenderData = () => {
+  const [categories, loading] = useFetch('https://api.chucknorris.io/jokes/categories');
+
+  const animation = {
+    loop: true,
+    autoplay: true,
+    animationData: Animation
+  };
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        {loading
+          ? (
+            <Lottie
+              options={animation}
+              height={300}
+              width={450}
+            />
+          )
+          : categories.map((valor, index) => (
+            <div className={['Line-list', index % 2 === 0 ? 'even' : 'odd'].join(' ')}>
+              <span>{`${index} - `}</span>
+              <span>{valor}</span>
+            </div>
+          ))}
+      </header>
+    </div>
+  );
+};
 
 export default App;

@@ -1,5 +1,5 @@
-.App {
-  text-align: center;
+.App{
+  padding: 20px;
 }
 
 .App-logo {
@@ -9,12 +9,9 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -23,11 +20,64 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(30deg);
-  }
+.Header-page{
+  height: 70px;
+  background-color: #fff;
+  line-height: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
+
+.Line-divider{
+  height: 2px;
+  background-color: #E83D6B;
+}
+
+.Logo{
+  position: absolute;
+  right: 20px;
+}
+
+.Title-page{
+  color: #26BCE6;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.Line-list{
+  color : black;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.Line-list:hover{
+  cursor: pointer;
+  background: linear-gradient(#20A6FF, #20A6DD);
+}
+
+.odd{
+  background: linear-gradient(#ddd, #ccc);
+  background-image: linear-gradient(rgb(221, 221, 221), rgb(204, 204, 204));
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+}
+
+.even{
+  background: linear-gradient(#fff, #eee);
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(238, 238, 238));
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+}
+
+
+
