@@ -21,11 +21,10 @@
 }
 
 .Header-page{
-  height: 70px;
   background-color: #fff;
-  line-height: 70px;
   padding-left: 20px;
   padding-right: 20px;
+  text-align: center;
 }
 
 .Line-divider{
@@ -34,7 +33,7 @@
 }
 
 .Logo{
-  position: absolute;
+  /* position: absolute; */
   right: 20px;
 }
 
